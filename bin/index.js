@@ -19,15 +19,19 @@ commander
   .version(version, "-v, --version")
   .command("init <projectName>")
   .alias("i")
-  .description("输入项目名称，初始化项目模版")
+  .description("Enter the project name and initialize the project template")
   .action(async (projectName, cmd) => {
     await checkDire(path.join(process.cwd(), projectName), projectName); // 检测创建项目文件夹是否存在
     inquirer.prompt(promptTypeList).then((result) => {
       const { url, gitName, val } = result.type;
-      console.log("您选择的模版类型信息如下：" + val);
-      console.log("项目初始化拷贝获取中...");
+      console.log(
+        "The template type information you selected is as follows：" + val
+      );
+      console.log("Project initialization copy acquisition...");
       if (!url) {
-        console.log(chalk.red(`${val} 该类型暂不支持...`));
+        console.log(
+          chalk.red(`${val} This type is not supported at the moment...`)
+        );
         process.exit(1);
       }
       exec("git clone " + url, function (error, stdout, stderr) {
@@ -45,7 +49,7 @@ commander
           } else {
             console.log(
               chalk.green(
-                `✔ The ${projectName} project template successfully create(项目模版创建成功)`
+                `✔ The ${projectName} project template successfully create`
               )
             );
           }

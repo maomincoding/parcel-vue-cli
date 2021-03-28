@@ -7,7 +7,7 @@ module.exports = {
   promptTypeList: [
     {
       type: "list",
-      message: "请选择拉取的模版类型:",
+      message: "Please select the template type to pull:",
       name: "type",
       choices: [
         {
