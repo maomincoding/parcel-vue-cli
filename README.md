@@ -1,17 +1,17 @@
 # parcel-vue-cli
 
 ```
-npm install portal-cli -g
+npm install parcel-vue-cli -g
 ```
 
 ```
-portal-cli init <projectName>
+parcel-vue-cli init <projectName>
 // 直接回车
 
 或者
-portal-cli  i <projectName>
+parcel-vue-cli  i <projectName>
 ```
 
 ```
-portal-cli -v
+parcel-vue-cli -v
 ```
