@@ -1,9 +1,23 @@
 {
   "name": "parcel-vue-cli",
-  "version": "1.0.3",
-  "main": "index.js",
-  "author": "maomincoding",
+  "version": "1.0.4",
+  "description": "Blazing fast, zero configuration vue application bundler.",
+  "keywords": [
+    "parcel",
+    "vue"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "maomincoding",
+    "email": "17864296568@163.com",
+    "url": "https://www.maomin.club"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomincoding/parcel-vue-app.git"
+  },
   "private": false,
+  "main": "index.js",
   "bin": {
     "parcel-vue-cli": "./bin/index.js"
   },
