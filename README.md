@@ -1,7 +1,8 @@
 # parcel-vue-cli
-<img src="https://www.maomin.club/data/logo.png" width="50%" alt="parcel-vue-cli" title="parcel-vue-cli"/>
-
-> Parcel-vue-app project building tool.
+<p align="center">
+<img src="https://www.maomin.club/data/logo.png" width="50%" alt="parcelVueCliLogo" title="parcelVueCliLogo"/>
+</p>
+<p align="center">Parcel-vue-app project building tool.</p>
 
 ### Installation
 
