@@ -1,35 +1,35 @@
 {
-	"name": "parcel-vue-cli",
-	"version": "1.0.7",
-	"description": "Blazing fast, zero configuration vue application bundler.",
-	"keywords": [
-		"parcel",
-		"vue"
-	],
-	"license": "MIT",
-	"author": {
-		"name": "maomincoding",
-		"email": "17864296568@163.com",
-		"url": "https://www.maomin.club"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/maomincoding/parcel-vue-app.git"
-	},
-	"private": false,
-	"main": "index.js",
-	"bin": {
-		"parcel-vue-cli": "./bin/index.js"
-	},
-	"dependencies": {
-		"chalk": "^4.0.0",
-		"commander": "^5.0.0",
-		"fs-extra": "^9.0.0",
-		"inquirer": "^7.1.0"
-	},
-	"devDependencies": {},
-	"browserslist": [
-		"> 1%",
-		"last 2 versions"
-	]
+  "name": "parcel-vue-cli",
+  "version": "1.0.8",
+  "description": "Blazing fast, zero configuration vue application bundler.",
+  "keywords": [
+    "parcel",
+    "vue"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "maomincoding",
+    "email": "17864296568@163.com",
+    "url": "https://www.maomin.club"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomincoding/parcel-vue-app.git"
+  },
+  "private": false,
+  "main": "index.js",
+  "bin": {
+    "parcel-vue-cli": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
