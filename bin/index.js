@@ -10,10 +10,6 @@ const { exec } = require('child_process');
 const { version } = require('../package.json');
 const { promptTypeList } = require('./config');
 
-function resolve(dir) {
-	return path.join(__dirname, '..', dir);
-}
-
 //version 版本号
 commander
 	.version(version, '-v, --version')
@@ -47,22 +43,14 @@ commander
 							chalk.red(`The ${projectName} project template already exist`)
 						);
 					} else {
-						fs.readdir(`./${projectName}/.git/`, function (err, files) {
-							if (err) {
-								console.error(err);
-								return;
-							} else {
-								exec(
-									`cd ${projectName};git remote rm origin`,
-									function (err, out) {}
-								);
-								console.log(
-									chalk.green(
-										`✔ The ${projectName} project template successfully create`
-									)
-								);
-							}
-						});
+						if (fs.existsSync(`./${projectName}/.git/config`)) {
+							exec('git remote rm origin', { cwd: `./${projectName}` });
+							console.log(
+								chalk.green(
+									`✔ The ${projectName} project template successfully create`
+								)
+							);
+						}
 					}
 				});
 			});
